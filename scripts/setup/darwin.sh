@@ -84,7 +84,7 @@ brew install --cask visual-studio-code
 
 # For screen sessions
 brew_install_or_upgrade 'tmux'
-$HOME/dotfiles/script/setup/tmux.sh
+$HOME/scripts/setup/tmux.sh
 
 # For image manipulation
 brew_install_or_upgrade 'imagemagick'
@@ -181,5 +181,5 @@ brew_install_or_upgrade terminal-notifier
 # Configure OSX
 ###############################################################################
 
-$HOME/dotfiles/scripts/setup/macos-defaults
+$HOME/scripts/setup/macos-defaults
 

@@ -6,11 +6,15 @@ set -euo pipefail
 IFS=$'\t\n' # Stricter IFS settings
 ORIGINAL_IFS=$IFS
 
+
+
 # Create tmux directory if it doesn't already exist
 mkdir -p $HOME/.tmux
 
 # Install Tmux Plugin Manager
-git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+if [ ! -d $HOME/.tmux/plugins/tpm ]; then 
+  git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+fi
 
 # Install plugins
 # https://github.com/tmux-plugins/tmux-yank
